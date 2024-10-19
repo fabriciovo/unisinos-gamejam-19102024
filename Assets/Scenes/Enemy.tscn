@@ -1,0 +1,89 @@
+[gd_scene load_steps=7 format=3 uid="uid://yo1nwff0jomt"]
+
+[ext_resource type="Material" uid="uid://ce0nv8jb3mdnk" path="res://Assets/Shaders/Floating.tres" id="2_pmm5t"]
+[ext_resource type="Texture2D" uid="uid://d0d7wde1awnuj" path="res://Assets/Sprites/Characters/character_squarePurple.png" id="3_aro7i"]
+[ext_resource type="Texture2D" uid="uid://c8yk88pkuevji" path="res://Assets/Sprites/Characters/character_handPurple.png" id="4_2koro"]
+
+[sub_resource type="GDScript" id="GDScript_w6bg0"]
+script/source = "extends CharacterBody2D
+@onready var raycast = $RayCast2D
+@onready var sprite = $Sprite2D
+
+const SPEED = 100.0
+const JUMP_VELOCITY = -400.0
+var direction: = 1
+
+func _process(delta: float) -> void:
+	if direction == 1:
+		sprite.flip_h = false
+	else:
+		sprite.flip_h = true
+
+func _physics_process(_delta: float) -> void:
+	if not is_on_floor():
+		velocity += get_gravity() * _delta
+	#if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		#velocity.y = JUMP_VELOCITY
+	velocity.x = direction * SPEED
+	move_and_slide()
+	if raycast.is_colliding():
+		var collided_object = raycast.get_collider()
+		
+		if collided_object:
+			direction *= -1
+			raycast.rotation *= -1
+
+func Destroy():
+	queue_free()
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.is_in_group(\"HERO\"):
+		body.queue_free()
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3krvk"]
+radius = 27.5
+height = 119.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kxdfk"]
+radius = 59.0762
+
+[node name="Enemy" type="CharacterBody2D"]
+disable_mode = 2
+collision_layer = 3
+collision_mask = 3
+platform_floor_layers = 4294967293
+platform_wall_layers = 2
+script = SubResource("GDScript_w6bg0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = ExtResource("2_pmm5t")
+texture = ExtResource("3_aro7i")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("CapsuleShape2D_3krvk")
+metadata/_edit_lock_ = true
+
+[node name="Hands" type="Node2D" parent="."]
+
+[node name="Hand1" type="Sprite2D" parent="Hands"]
+position = Vector2(-58, 16)
+texture = ExtResource("4_2koro")
+
+[node name="Hand2" type="Sprite2D" parent="Hands"]
+position = Vector2(57, 17)
+scale = Vector2(1, 1)
+texture = ExtResource("4_2koro")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+rotation = -1.5708
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_kxdfk")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

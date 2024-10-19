@@ -8,3 +8,11 @@ res://Assets/Scenes/Worlds/world_2.tscn
 res://Assets/Scenes/Worlds/World_Parent.tscn
 res://Assets/Scripts/draw_node.gd
 res://Assets/Scenes/ink.tscn
+res://Assets/Scenes/Enemy.tscn
+res://Assets/Scripts/hero.gd
+res://Assets/Scenes/Hero.tscn
+res://Assets/Scenes/enemy.gd
+res://Assets/Scripts/World.gd
+res://Assets/Scenes/goal.tscn
+res://Assets/Scripts/goal.gd
+res://Assets/Scripts/ui.gd

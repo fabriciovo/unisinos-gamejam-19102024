@@ -16,7 +16,9 @@ func _input(_event: InputEvent) -> void:
 	_create_static_body(_event.position)
 	
 
-
+func ResetInk():
+	ink_count = 100
+	$Ink.set_ink_value(ink_count)
 
 func _draw() -> void:
 	for _point in _array_pos:
