@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Assets/Scripts/World.gd" id="1_ovpnn"]
 [ext_resource type="TileSet" uid="uid://f12ejpc081aj" path="res://Assets/Tilesets/World_Parent.tres" id="2_uymsg"]
-[ext_resource type="Texture2D" uid="uid://rhw4a4fomene" path="res://Assets/Paper Background.png" id="2_wu4fu"]
+[ext_resource type="Texture2D" uid="uid://rhw4a4fomene" path="res://Assets/Sprites/Ui/Paper Background.png" id="2_wu4fu"]
 [ext_resource type="PackedScene" uid="uid://bq0axx6wd1cpf" path="res://Assets/Scenes/goal.tscn" id="4_jc7h7"]
 
 [node name="World_Parent" type="Node2D"]

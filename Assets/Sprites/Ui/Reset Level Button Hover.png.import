@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://flue6aemwpej"
-path="res://.godot/imported/Reset Level Button.png-e54cb358a2e97fce6fa8d51c0e5a176d.ctex"
+uid="uid://cawnfm3hxnwnk"
+path="res://.godot/imported/Reset Level Button Hover.png-b4e8414b35fde6f8338f071d995af130.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Weapons/Reset Level Button.png"
-dest_files=["res://.godot/imported/Reset Level Button.png-e54cb358a2e97fce6fa8d51c0e5a176d.ctex"]
+source_file="res://Assets/Sprites/Ui/Reset Level Button Hover.png"
+dest_files=["res://.godot/imported/Reset Level Button Hover.png-b4e8414b35fde6f8338f071d995af130.ctex"]
 
 [params]
 

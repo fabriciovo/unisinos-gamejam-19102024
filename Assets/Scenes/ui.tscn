@@ -1,9 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bjyiqo0dqgdgu"]
+[gd_scene load_steps=11 format=3 uid="uid://bjyiqo0dqgdgu"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/ui.gd" id="1_gemk2"]
 [ext_resource type="Texture2D" uid="uid://dcqu4dq1sr740" path="res://Assets/Sprites/Ui/Playbutton Hover.png" id="2_2nqfd"]
 [ext_resource type="Texture2D" uid="uid://w4qgrm81lby4" path="res://Assets/Sprites/Ui/PlayButton.png" id="2_3sc7d"]
-[ext_resource type="Texture2D" uid="uid://flue6aemwpej" path="res://Assets/Sprites/Weapons/Reset Level Button.png" id="3_1d0ay"]
+[ext_resource type="Texture2D" uid="uid://flue6aemwpej" path="res://Assets/Sprites/Ui/Reset Level Button.png" id="3_1d0ay"]
 [ext_resource type="Texture2D" uid="uid://b7mywq3h0jrf4" path="res://Assets/Sprites/Ui/Playbutton Click.png" id="3_wacsp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jxo1k"]
@@ -15,21 +15,14 @@ texture = ExtResource("3_wacsp")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bncm8"]
 texture = ExtResource("2_3sc7d")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_suyaa"]
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ex5bn"]
 texture = ExtResource("3_1d0ay")
 
 [node name="UI" type="CanvasLayer"]
 process_mode = 3
 script = ExtResource("1_gemk2")
-
-[node name="Control" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_lock_ = true
 
 [node name="Play" type="Button" parent="."]
 offset_left = 1162.0
@@ -45,6 +38,7 @@ offset_left = 1576.0
 offset_top = 158.0
 offset_right = 1877.0
 offset_bottom = 276.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_suyaa")
 theme_override_styles/normal = SubResource("StyleBoxTexture_ex5bn")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

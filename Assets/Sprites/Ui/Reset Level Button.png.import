@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rhw4a4fomene"
-path="res://.godot/imported/Paper Background.png-78ec8315f04070926b401fa9060ca419.ctex"
+uid="uid://flue6aemwpej"
+path="res://.godot/imported/Reset Level Button.png-92cf6b2e1dada9882e2b315261b01415.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Paper Background.png"
-dest_files=["res://.godot/imported/Paper Background.png-78ec8315f04070926b401fa9060ca419.ctex"]
+source_file="res://Assets/Sprites/Ui/Reset Level Button.png"
+dest_files=["res://.godot/imported/Reset Level Button.png-92cf6b2e1dada9882e2b315261b01415.ctex"]
 
 [params]
 
