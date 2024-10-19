@@ -9,5 +9,6 @@ func _on_body_entered(body: Node2D) -> void:
 		hero_count+=1
 		body.call_deferred("queue_free")
 		if hero_count == hero_needed:
+			Ui.ResetUI()
 			get_tree().change_scene_to_packed(next_scene)
 		
