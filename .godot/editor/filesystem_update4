@@ -8,3 +8,4 @@ res://Assets/Scenes/ui.gd
 res://Assets/Scenes/draw_node.tscn
 res://Assets/Scenes/World.gd
 res://Assets/Scenes/World_Parent.tscn
+res://Assets/Scripts/title_screen.gd
