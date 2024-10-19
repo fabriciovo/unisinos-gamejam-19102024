@@ -14,3 +14,7 @@ res://Assets/Scenes/Hero.tscn
 res://Assets/Shaders/FloatingShader.gdshader
 res://Assets/Scenes/hero.gd
 res://Assets/Scripts/Player.gd
+res://Assets/Scenes/object.tscn
+res://Assets/Scripts/object.gd
+res://Assets/Scripts/World.gd
+res://Assets/Scripts/ui.gd

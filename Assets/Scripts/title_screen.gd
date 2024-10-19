@@ -1,7 +1,7 @@
 extends Control
 
 func _ready() -> void:
-	DrawNode.Can_draw = false
+	#DrawNode.Can_draw = false
 	Ui.hide()
 
 

@@ -3,7 +3,7 @@
 [ext_resource type="Shader" path="res://Assets/Shaders/FloatingShader.gdshader" id="1_7n72g"]
 [ext_resource type="Texture2D" uid="uid://c57g6apsop7ko" path="res://Assets/Sprites/Characters/character_roundGreen.png" id="1_ondsp"]
 [ext_resource type="Texture2D" uid="uid://bp6apfvx5n1x2" path="res://Assets/Sprites/Characters/character_handGreen.png" id="2_dnyud"]
-[ext_resource type="Script" path="res://Assets/Scenes/hero.gd" id="2_rt4he"]
+[ext_resource type="Script" path="res://Assets/Scripts/hero.gd" id="2_rt4he"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_3pgkb"]
 shader = ExtResource("1_7n72g")

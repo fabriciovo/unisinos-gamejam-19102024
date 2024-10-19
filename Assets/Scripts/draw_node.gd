@@ -2,15 +2,21 @@ extends Control
 
 var _array_pos: Array = []
 var _shapes: Array = []
-var Can_draw: bool = true
+var _start_draw = false
+var Can_draw: bool = false
 
 func _input(_event: InputEvent) -> void:
 	if not Can_draw: return
-	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and _start_draw:
+		Can_draw = false
+		_start_draw = false
 		return
-	_array_pos.append(_event.position)
-	queue_redraw()
-	_create_static_body(_event.position)
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+		_start_draw = true
+		_array_pos.append(_event.position)
+		queue_redraw()
+		_create_static_body(_event.position)
+
 
 
 func _draw() -> void:

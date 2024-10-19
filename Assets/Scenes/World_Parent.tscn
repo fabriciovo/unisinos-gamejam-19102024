@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cctjfxah28owd"]
 
-[ext_resource type="Script" path="res://Assets/Scenes/World.gd" id="1_ovpnn"]
+[ext_resource type="Script" path="res://Assets/Scripts/World.gd" id="1_ovpnn"]
 [ext_resource type="Texture2D" uid="uid://do1prqjow5sb" path="res://Assets/Sprites/Retina/tile.png" id="2_rmf1q"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="3_neljh"]
 
@@ -29,7 +29,7 @@ shape = SubResource("RectangleShape2D_05ikw")
 metadata/_edit_lock_ = true
 
 [node name="Wall" type="Node2D" parent="."]
-position = Vector2(658, 129)
+position = Vector2(1160, 339)
 
 [node name="Sprite2D" type="Sprite2D" parent="Wall"]
 texture = SubResource("CompressedTexture2D_t3pu5")

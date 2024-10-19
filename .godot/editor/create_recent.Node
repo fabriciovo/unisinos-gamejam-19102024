@@ -1,12 +1,12 @@
+CollisionShape2D
+StaticBody2D
+Sprite2D
 CanvasModulate
 Node2D
-Sprite2D
 CharacterBody2D
 Button
 Control
-CollisionShape2D
 Area2D
-StaticBody2D
 HBoxContainer
 Panel
 CanvasLayer
