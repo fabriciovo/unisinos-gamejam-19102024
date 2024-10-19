@@ -1,19 +1,27 @@
-[gd_scene load_steps=10 format=3 uid="uid://bjyiqo0dqgdgu"]
+[gd_scene load_steps=14 format=3 uid="uid://bjyiqo0dqgdgu"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/ui.gd" id="1_gemk2"]
-[ext_resource type="Texture2D" uid="uid://dcqu4dq1sr740" path="res://Assets/Sprites/Ui/Playbutton Hover.png" id="2_2nqfd"]
 [ext_resource type="Texture2D" uid="uid://w4qgrm81lby4" path="res://Assets/Sprites/Ui/PlayButton.png" id="2_3sc7d"]
+[ext_resource type="Texture2D" uid="uid://ctovyo2u3ldnh" path="res://Assets/Sprites/Weapons/playbutton-hover.png" id="2_g5b4n"]
 [ext_resource type="Texture2D" uid="uid://flue6aemwpej" path="res://Assets/Sprites/Weapons/Reset Level Button.png" id="3_1d0ay"]
-[ext_resource type="Texture2D" uid="uid://b7mywq3h0jrf4" path="res://Assets/Sprites/Ui/Playbutton Click.png" id="3_wacsp"]
+[ext_resource type="Texture2D" uid="uid://dnw4d0vbps6f6" path="res://Assets/Sprites/Weapons/playbutton-click.png" id="3_h70j1"]
+[ext_resource type="Texture2D" uid="uid://cmfy1v1b1a8cf" path="res://Assets/Sprites/Weapons/resetlevel-button-hover.png" id="5_d5kcc"]
+[ext_resource type="Texture2D" uid="uid://co0u3kgobrefw" path="res://Assets/Sprites/Weapons/resetlevel-button-click.png" id="6_2er44"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jxo1k"]
-texture = ExtResource("2_2nqfd")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oecml"]
+texture = ExtResource("2_g5b4n")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_plmlt"]
-texture = ExtResource("3_wacsp")
+texture = ExtResource("3_h70j1")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bncm8"]
 texture = ExtResource("2_3sc7d")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fo4hc"]
+texture = ExtResource("5_d5kcc")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b1d1s"]
+texture = ExtResource("6_2er44")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ex5bn"]
 texture = ExtResource("3_1d0ay")
@@ -32,11 +40,11 @@ grow_vertical = 2
 metadata/_edit_lock_ = true
 
 [node name="Play" type="Button" parent="."]
-offset_left = 1311.0
+offset_left = 1322.0
 offset_top = 19.0
 offset_right = 1487.0
 offset_bottom = 83.0
-theme_override_styles/hover = SubResource("StyleBoxTexture_jxo1k")
+theme_override_styles/hover = SubResource("StyleBoxTexture_oecml")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_plmlt")
 theme_override_styles/normal = SubResource("StyleBoxTexture_bncm8")
 
@@ -45,6 +53,8 @@ offset_left = 1717.0
 offset_top = 81.0
 offset_right = 1872.0
 offset_bottom = 121.0
+theme_override_styles/hover = SubResource("StyleBoxTexture_fo4hc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_b1d1s")
 theme_override_styles/normal = SubResource("StyleBoxTexture_ex5bn")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
