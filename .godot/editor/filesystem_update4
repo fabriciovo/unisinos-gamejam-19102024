@@ -1,0 +1,10 @@
+res://draw_node.gd
+res://control.tscn
+res://Assets/Scenes/control.tscn
+res://Assets/Scenes/ui.tscn
+res://Assets/Scenes/goal.tscn
+res://Assets/Scripts/draw_node.gd
+res://Assets/Scenes/ui.gd
+res://Assets/Scenes/draw_node.tscn
+res://Assets/Scenes/World.gd
+res://Assets/Scenes/World_Parent.tscn

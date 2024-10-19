@@ -14,6 +14,18 @@ config/name="unisinos-gamejam-19102024"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Ui="*res://Assets/Scenes/ui.tscn"
+DrawNode="*res://Assets/Scenes/draw_node.tscn"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=960
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
