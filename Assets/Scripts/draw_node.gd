@@ -2,11 +2,10 @@ extends Control
 
 var _array_pos: Array = []
 var _shapes: Array = []
-var _can_draw: bool = true
-
+var Can_draw: bool = true
 
 func _input(_event: InputEvent) -> void:
-	if not _can_draw: return
+	if not Can_draw: return
 	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		return
 	_array_pos.append(_event.position)
@@ -37,4 +36,5 @@ func Reset_Draw():
 	_array_pos.clear()
 	for _shape in _shapes:
 		_shape.queue_free()
+	_shapes.clear()
 	queue_redraw()

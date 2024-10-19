@@ -4,9 +4,6 @@ extends CanvasLayer
 
 var IsPlay:bool = true
 
-func _ready() -> void:
-	get_tree().paused = true
-
 func _on_play_pressed() -> void:
 	if !IsPlay:
 		get_tree().reload_current_scene()
@@ -14,3 +11,11 @@ func _on_play_pressed() -> void:
 	if IsPlay: 
 		get_tree().paused = false
 	IsPlay = !IsPlay
+
+
+func _on_control_mouse_entered() -> void:
+	DrawNode.Can_draw = true
+
+
+func _on_control_mouse_exited() -> void:
+	DrawNode.Can_draw = false

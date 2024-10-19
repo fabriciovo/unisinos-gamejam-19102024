@@ -1,6 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bq0axx6wd1cpf"]
-
-[ext_resource type="Texture2D" uid="uid://bg5xi0wntn5m7" path="res://Assets/Sprites/environment/barn.png" id="1_tas6r"]
+[gd_scene load_steps=2 format=3 uid="uid://bq0axx6wd1cpf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2ndp8"]
 size = Vector2(187, 190)
@@ -12,4 +10,3 @@ position = Vector2(-3.5, 2)
 shape = SubResource("RectangleShape2D_2ndp8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_tas6r")

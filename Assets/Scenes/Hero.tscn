@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://1q4qflvmiepm"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/FloatingShader.gdshader" id="1_7n72g"]
+[ext_resource type="Texture2D" uid="uid://c57g6apsop7ko" path="res://Assets/Sprites/Characters/character_roundGreen.png" id="1_ondsp"]
+[ext_resource type="Texture2D" uid="uid://bp6apfvx5n1x2" path="res://Assets/Sprites/Characters/character_handGreen.png" id="2_dnyud"]
+[ext_resource type="Script" path="res://Assets/Scenes/hero.gd" id="2_rt4he"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3pgkb"]
+shader = ExtResource("1_7n72g")
+shader_parameter/float_speed = 7.0
+shader_parameter/float_height = 1.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3krvk"]
+radius = 27.5
+height = 119.0
+
+[node name="Hero" type="CharacterBody2D"]
+disable_mode = 2
+collision_layer = 3
+collision_mask = 3
+platform_floor_layers = 4294967293
+platform_wall_layers = 2
+script = ExtResource("2_rt4he")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_3pgkb")
+texture = ExtResource("1_ondsp")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1.5)
+shape = SubResource("CapsuleShape2D_3krvk")
+metadata/_edit_lock_ = true
+
+[node name="Hands" type="Node2D" parent="."]
+
+[node name="Hand1" type="Sprite2D" parent="Hands"]
+position = Vector2(-58, 16)
+texture = ExtResource("2_dnyud")
+
+[node name="Hand2" type="Sprite2D" parent="Hands"]
+position = Vector2(57, 17)
+texture = ExtResource("2_dnyud")

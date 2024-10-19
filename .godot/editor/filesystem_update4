@@ -9,3 +9,8 @@ res://Assets/Scenes/draw_node.tscn
 res://Assets/Scenes/World.gd
 res://Assets/Scenes/World_Parent.tscn
 res://Assets/Scripts/title_screen.gd
+res://Assets/Scenes/title_screen.tscn
+res://Assets/Scenes/Hero.tscn
+res://Assets/Shaders/FloatingShader.gdshader
+res://Assets/Scenes/hero.gd
+res://Assets/Scripts/Player.gd
