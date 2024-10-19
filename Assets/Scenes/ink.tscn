@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdbeedh07marw"]
+
+[ext_resource type="Texture2D" uid="uid://bmbgfq6avgfnh" path="res://Assets/Sprites/Weapons/White Progress.png" id="1_vjlil"]
+[ext_resource type="Texture2D" uid="uid://co7q38ob6hl1t" path="res://Assets/Sprites/Weapons/Red Progress.png" id="2_nexhc"]
+[ext_resource type="Texture2D" uid="uid://dtc8rtn2bpfss" path="res://Assets/Sprites/Weapons/Grayline Progress.png" id="2_ofnx1"]
+[ext_resource type="Script" path="res://Assets/Scripts/ink.gd" id="4_5ylkt"]
+
+[node name="Ink" type="TextureProgressBar"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -411.0
+offset_top = 59.0
+offset_right = -54.0
+offset_bottom = 94.0
+grow_horizontal = 0
+value = 100.0
+texture_under = ExtResource("1_vjlil")
+texture_over = ExtResource("2_ofnx1")
+texture_progress = ExtResource("2_nexhc")
+script = ExtResource("4_5ylkt")

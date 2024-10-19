@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxkii4h45n84y"]
+[gd_scene load_steps=3 format=3 uid="uid://dxkii4h45n84y"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/draw_node.gd" id="1_ck5vp"]
+[ext_resource type="PackedScene" uid="uid://bdbeedh07marw" path="res://Assets/Scenes/ink.tscn" id="2_4h404"]
 
 [node name="DrawNode" type="Control"]
 process_mode = 3
@@ -11,3 +12,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ck5vp")
+
+[node name="Ink" parent="." instance=ExtResource("2_4h404")]
+layout_mode = 1
+offset_left = -385.0
+offset_top = 32.0
+offset_right = -28.0
+offset_bottom = 67.0

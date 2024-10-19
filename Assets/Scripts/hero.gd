@@ -6,6 +6,8 @@ const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 var direction: = 1
 
+func _ready() -> void:
+	add_to_group("HERO")
 
 func _process(delta: float) -> void:
 	if direction == 1:
@@ -26,3 +28,6 @@ func _physics_process(_delta: float) -> void:
 		if collided_object:
 			direction *= -1
 			raycast.rotation *= -1
+
+func Destroy():
+	queue_free()

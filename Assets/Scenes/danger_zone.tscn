@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2j0u46esgmsw"]
+
+[ext_resource type="Script" path="res://Assets/Scenes/danger_zone.gd" id="1_34wd8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pdhm0"]
+size = Vector2(122, 58.7729)
+
+[node name="DangerZone" type="Area2D"]
+script = ExtResource("1_34wd8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-61, 91.6135)
+shape = SubResource("RectangleShape2D_pdhm0")
+debug_color = Color(1, 0.335916, 0.542573, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

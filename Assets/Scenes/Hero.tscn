@@ -1,14 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://1q4qflvmiepm"]
 
-[ext_resource type="Shader" path="res://Assets/Shaders/FloatingShader.gdshader" id="1_7n72g"]
-[ext_resource type="Texture2D" uid="uid://c57g6apsop7ko" path="res://Assets/Sprites/Characters/character_roundGreen.png" id="1_ondsp"]
-[ext_resource type="Texture2D" uid="uid://bp6apfvx5n1x2" path="res://Assets/Sprites/Characters/character_handGreen.png" id="2_dnyud"]
+[ext_resource type="Material" uid="uid://ce0nv8jb3mdnk" path="res://Assets/Shaders/Floating.tres" id="2_q3ojw"]
 [ext_resource type="Script" path="res://Assets/Scripts/hero.gd" id="2_rt4he"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_3pgkb"]
-shader = ExtResource("1_7n72g")
-shader_parameter/float_speed = 7.0
-shader_parameter/float_height = 1.0
+[ext_resource type="Texture2D" uid="uid://ccv6ykbvmheo6" path="res://Assets/Sprites/Characters/character_roundRed.png" id="3_bok4i"]
+[ext_resource type="Texture2D" uid="uid://bpfb4fms2tabq" path="res://Assets/Sprites/Characters/character_handRed.png" id="4_bd0no"]
+[ext_resource type="Texture2D" uid="uid://doe6vnu0j436" path="res://Assets/Sprites/Weapons/item_pencil.png" id="5_2f3yy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3krvk"]
 radius = 27.5
@@ -23,8 +19,8 @@ platform_wall_layers = 2
 script = ExtResource("2_rt4he")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-material = SubResource("ShaderMaterial_3pgkb")
-texture = ExtResource("1_ondsp")
+material = ExtResource("2_q3ojw")
+texture = ExtResource("3_bok4i")
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -36,11 +32,18 @@ metadata/_edit_lock_ = true
 
 [node name="Hand1" type="Sprite2D" parent="Hands"]
 position = Vector2(-58, 16)
-texture = ExtResource("2_dnyud")
+texture = ExtResource("4_bd0no")
 
-[node name="Hand2" type="Sprite2D" parent="Hands"]
-position = Vector2(57, 17)
-texture = ExtResource("2_dnyud")
+[node name="Hand3" type="Sprite2D" parent="Hands"]
+material = ExtResource("2_q3ojw")
+position = Vector2(63, -12)
+scale = Vector2(0.96875, 0.96875)
+texture = ExtResource("5_2f3yy")
+
+[node name="Hand2" type="Sprite2D" parent="Hands/Hand3"]
+position = Vector2(-6.19355, 29.9355)
+scale = Vector2(1.03226, 1.03226)
+texture = ExtResource("4_bd0no")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 rotation = -1.5708

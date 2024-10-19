@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ce0nv8jb3mdnk"]
+
+[ext_resource type="Shader" path="res://Assets/Shaders/FloatingShader.gdshader" id="1_5fk1f"]
+
+[resource]
+shader = ExtResource("1_5fk1f")
+shader_parameter/float_speed = 7.0
+shader_parameter/float_height = 1.0

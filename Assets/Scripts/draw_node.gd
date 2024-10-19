@@ -3,19 +3,20 @@ extends Control
 var _array_pos: Array = []
 var _shapes: Array = []
 var _start_draw = false
-var Can_draw: bool = false
+var Can_draw: bool = true
+var ink_count = 100
 
 func _input(_event: InputEvent) -> void:
 	if not Can_draw: return
-	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and _start_draw:
-		Can_draw = false
-		_start_draw = false
+	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		return
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-		_start_draw = true
-		_array_pos.append(_event.position)
-		queue_redraw()
-		_create_static_body(_event.position)
+	ink_count -= 1.0
+	$Ink.set_ink_value(ink_count)
+	_start_draw = true
+	_array_pos.append(_event.position)
+	queue_redraw()
+	_create_static_body(_event.position)
+	
 
 
 

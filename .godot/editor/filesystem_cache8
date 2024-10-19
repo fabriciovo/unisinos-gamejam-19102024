@@ -1,27 +1,43 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1729356889
+::res://::1729367447
+Heather Green Lined Paper.jpg::CompressedTexture2D::382879484104942509::1729367447::1729367456::1::::<><>::
 icon.svg::CompressedTexture2D::6919876157473035359::1729339344::1729341286::1::::<><>::
-::res://Assets/::1729350787
-::res://Assets/Scenes/::1729357851
-draw_node.tscn::PackedScene::8794750789937069214::1729357807::0::1::::<><>::res://Assets/Scripts/draw_node.gd
-goal.tscn::PackedScene::3561093955943529483::1729353809::0::1::::<><>::
-Hero.tscn::PackedScene::1859729624726603002::1729354057::0::1::::<><>::res://Assets/Shaders/FloatingShader.gdshader<>uid://c57g6apsop7ko::::res://Assets/Sprites/Characters/character_roundGreen.png<>uid://bp6apfvx5n1x2::::res://Assets/Sprites/Characters/character_handGreen.png<>res://Assets/Scripts/hero.gd
-object.tscn::PackedScene::2059389470243105151::1729357807::0::1::::<><>::uid://do1prqjow5sb::::res://Assets/Sprites/Retina/tile.png<>res://Assets/Scripts/object.gd
-title_screen.tscn::PackedScene::3333163592337934521::1729349417::0::1::::<><>::res://Assets/Scripts/title_screen.gd
-ui.tscn::PackedScene::3068180425282376764::1729357807::0::1::::<><>::res://Assets/Scripts/ui.gd
-World_Parent.tscn::PackedScene::4952998822286321599::1729357851::0::1::::<><>::res://Assets/Scripts/World.gd
-::res://Assets/Scripts/::1729358363
-draw_node.gd::GDScript::-1::1729357701::0::1::::<>Control<>::
-hero.gd::GDScript::-1::1729353806::0::1::::<>CharacterBody2D<>::
+::res://Assets/::1729367316
+::res://Assets/Fonts/::1729367426
+Heather Green Lined Paper.jpg::CompressedTexture2D::8226539100949528881::1729367416::1729367426::1::::<><>::
+ScribblesVariantNo_ligatures-Regular.ttf::FontFile::478821555862720686::1729367084::1729367313::1::::<><>::
+::res://Assets/Scenes/::1729367089
+clouds.tscn::PackedScene::820298540479763477::1729365646::0::1::::<><>::res://Assets/Scripts/clouds.gd<>uid://vcflw8xhtxn4::::res://Assets/Sprites/Retina/background_cloudA.png
+danger_zone.gd::GDScript::-1::1729361731::0::1::::<>Area2D<>::
+danger_zone.tscn::PackedScene::9074495441062112186::1729362820::0::1::::<><>::res://Assets/Scenes/danger_zone.gd
+draw_node.tscn::PackedScene::8794750789937069214::1729366958::0::1::::<><>::res://Assets/Scripts/draw_node.gd<>uid://bdbeedh07marw::::res://Assets/Scenes/ink.tscn
+goal.tscn::PackedScene::3561093955943529483::1729362820::0::1::::<><>::res://Assets/Scripts/goal.gd<>uid://2he5kwdgj7e4::::res://Assets/Sprites/Retina/tile_door.png
+Hero.tscn::PackedScene::1859729624726603002::1729365646::0::1::::<><>::uid://ce0nv8jb3mdnk::::res://Assets/Shaders/Floating.tres<>res://Assets/Scripts/hero.gd<>uid://ccv6ykbvmheo6::::res://Assets/Sprites/Characters/character_roundRed.png<>uid://bpfb4fms2tabq::::res://Assets/Sprites/Characters/character_handRed.png<>uid://doe6vnu0j436::::res://Assets/Sprites/Weapons/item_pencil.png
+ink.tscn::PackedScene::2599301773070745368::1729366958::0::1::::<><>::uid://bmbgfq6avgfnh::::res://Assets/Sprites/Weapons/White Progress.png<>uid://co7q38ob6hl1t::::res://Assets/Sprites/Weapons/Red Progress.png<>uid://dtc8rtn2bpfss::::res://Assets/Sprites/Weapons/Grayline Progress.png<>res://Assets/Scripts/ink.gd
+object.tscn::PackedScene::2059389470243105151::1729362820::0::1::::<><>::uid://do1prqjow5sb::::res://Assets/Sprites/Retina/tile.png<>res://Assets/Scripts/object.gd
+title_screen.tscn::PackedScene::3333163592337934521::1729362820::0::1::::<><>::res://Assets/Scripts/title_screen.gd
+ui.tscn::PackedScene::3068180425282376764::1729366958::0::1::::<><>::res://Assets/Scripts/ui.gd<>uid://w4qgrm81lby4::::res://Assets/Sprites/Ui/PlayButton.png<>uid://flue6aemwpej::::res://Assets/Sprites/Weapons/Reset Level Button.png
+::res://Assets/Scenes/Worlds/::1729367018
+world_1.tscn::PackedScene::621417169195044011::1729367018::0::1::::<><>::uid://cctjfxah28owd::::res://Assets/Scenes/Worlds/World_Parent.tscn<>uid://db3r88tfxgtmf::::res://Assets/Scenes/Worlds/world_2.tscn<>uid://1q4qflvmiepm::::res://Assets/Scenes/Hero.tscn<>uid://d2j0u46esgmsw::::res://Assets/Scenes/danger_zone.tscn<>uid://lxmgx4nk0pib::::res://Assets/Scenes/clouds.tscn
+world_2.tscn::PackedScene::7288346354786910441::1729362820::0::1::::<><>::uid://cctjfxah28owd::::res://Assets/Scenes/Worlds/World_Parent.tscn<>uid://1q4qflvmiepm::::res://Assets/Scenes/Hero.tscn
+World_Parent.tscn::PackedScene::4952998822286321599::1729366958::0::1::::<><>::res://Assets/Scripts/World.gd<>uid://f12ejpc081aj::::res://Assets/Tilesets/World_Parent.tres<>uid://bq0axx6wd1cpf::::res://Assets/Scenes/goal.tscn
+::res://Assets/Scripts/::1729366944
+clouds.gd::GDScript::-1::1729363370::0::1::::<>Node2D<>::
+draw_node.gd::GDScript::-1::1729366944::0::1::::<>Control<>::
+goal.gd::GDScript::-1::1729366541::0::1::::<>Area2D<>::
+hero.gd::GDScript::-1::1729361806::0::1::::<>CharacterBody2D<>::
+ink.gd::GDScript::-1::1729366730::0::1::::<>TextureProgressBar<>::
 object.gd::GDScript::-1::1729356934::0::1::::<>Sprite2D<>::
 Player.gd::GDScript::-1::1729352309::0::1::::<>Node<>::
-spritesheet_retina.png::CompressedTexture2D::3834799992400726302::1729358363::1729358364::1::::<><>::
-title_screen.gd::GDScript::-1::1729357165::0::1::::<>Control<>::
-ui.gd::GDScript::-1::1729356243::0::1::::<>CanvasLayer<>::
-World.gd::GDScript::-1::1729355015::0::1::::<>Node2D<>::
-::res://Assets/Shaders/::1729357851
-FloatingShader.gdshader::Shader::-1::1729357851::0::1::::<><>::
-::res://Assets/Sprites/::1729350455
+title_screen.gd::GDScript::-1::1729362817::0::1::::<>Control<>::
+ui.gd::GDScript::-1::1729366381::0::1::::<>CanvasLayer<>::
+World.gd::GDScript::-1::1729366360::0::1::::<>Node2D<>::
+::res://Assets/Shaders/::1729367018
+Floating.tres::ShaderMaterial::5106034755624915792::1729364870::0::1::::<><>::res://Assets/Shaders/FloatingShader.gdshader
+FloatingShader.gdshader::Shader::-1::1729367018::0::1::::<><>::
+::res://Assets/Sprites/::1729367316
+inkcontrol.png::CompressedTexture2D::3780556696045382672::1729364402::1729367316::1::::<><>::
+spritesheet_retina.png::CompressedTexture2D::3834799992400726302::1729358363::1729367104::1::::<><>::
 ::res://Assets/Sprites/Characters/::1729350398
 character_handGreen.png::CompressedTexture2D::3503276131691303417::1729350345::1729350398::1::::<><>::
 character_handPurple.png::CompressedTexture2D::7139286131589115374::1729350345::1729350398::1::::<><>::
@@ -89,7 +105,8 @@ tile_tree.png::CompressedTexture2D::4041344290205309795::1729350345::1729350348:
 tile_treeTop.png::CompressedTexture2D::7826525958371152904::1729350345::1729350348::1::::<><>::
 tile_treeTrunk.png::CompressedTexture2D::5207290800704361299::1729350345::1729350348::1::::<><>::
 tile_water.png::CompressedTexture2D::1853637020126350687::1729350345::1729350348::1::::<><>::
-::res://Assets/Sprites/Ui/::1729350471
+::res://Assets/Sprites/Ui/::1729364412
+PlayButton.png::CompressedTexture2D::1605004614521292265::1729363556::1729363570::1::::<><>::
 ui_balloon.png::CompressedTexture2D::1035547793622402655::1729350345::1729350471::1::::<><>::
 ui_box.png::CompressedTexture2D::5163798690762007933::1729350345::1729350471::1::::<><>::
 ui_button.png::CompressedTexture2D::1347649098380374054::1729350345::1729350471::1::::<><>::
@@ -110,12 +127,13 @@ ui_numPeriod.png::CompressedTexture2D::4965371581403920792::1729350345::17293504
 ui_numX.png::CompressedTexture2D::3199908157351694990::1729350345::1729350471::1::::<><>::
 ui_numXlarge.png::CompressedTexture2D::1205017897262187999::1729350345::1729350471::1::::<><>::
 ui_select.png::CompressedTexture2D::7799898136235270168::1729350345::1729350471::1::::<><>::
-::res://Assets/Sprites/Weapons/::1729350444
+::res://Assets/Sprites/Weapons/::1729365364
 effect_blast.png::CompressedTexture2D::7736219964174396818::1729350345::1729350444::1::::<><>::
 effect_blastLarge.png::CompressedTexture2D::1887258180508570071::1729350345::1729350444::1::::<><>::
 effect_shot.png::CompressedTexture2D::3117963489903077116::1729350345::1729350444::1::::<><>::
 effect_shotLarge.png::CompressedTexture2D::4752045827558156767::1729350345::1729350444::1::::<><>::
 effect_trail.png::CompressedTexture2D::5553647892753658634::1729350345::1729350444::1::::<><>::
+Grayline Progress.png::CompressedTexture2D::8499013874222513458::1729365364::1729365364::1::::<><>::
 item_arrow.png::CompressedTexture2D::1392966276205254856::1729350345::1729350444::1::::<><>::
 item_blaster.png::CompressedTexture2D::731064870557801508::1729350345::1729350444::1::::<><>::
 item_bow.png::CompressedTexture2D::1442859097291310459::1729350345::1729350444::1::::<><>::
@@ -130,3 +148,8 @@ item_shield.png::CompressedTexture2D::5651346192669510463::1729350345::172935044
 item_shieldRound.png::CompressedTexture2D::320083914839705051::1729350345::1729350444::1::::<><>::
 item_spear.png::CompressedTexture2D::8604422986757549539::1729350345::1729350444::1::::<><>::
 item_sword.png::CompressedTexture2D::5416178139427893233::1729350345::1729350444::1::::<><>::
+Red Progress.png::CompressedTexture2D::5822568495547135995::1729364885::1729364886::1::::<><>::
+Reset Level Button.png::CompressedTexture2D::374875484938282685::1729364895::1729364895::1::::<><>::
+White Progress.png::CompressedTexture2D::3231125304320517013::1729365364::1729365364::1::::<><>::
+::res://Assets/Tilesets/::1729367104
+World_Parent.tres::TileSet::406265037783854089::1729367104::0::1::::<><>::uid://buvuuirup2dte::::res://Assets/Sprites/spritesheet_retina.png
