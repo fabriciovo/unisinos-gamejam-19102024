@@ -32,19 +32,19 @@ grow_vertical = 2
 metadata/_edit_lock_ = true
 
 [node name="Play" type="Button" parent="."]
-offset_left = 1162.0
-offset_top = 38.0
-offset_right = 1508.0
-offset_bottom = 194.0
+offset_left = 1311.0
+offset_top = 19.0
+offset_right = 1487.0
+offset_bottom = 83.0
 theme_override_styles/hover = SubResource("StyleBoxTexture_jxo1k")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_plmlt")
 theme_override_styles/normal = SubResource("StyleBoxTexture_bncm8")
 
 [node name="Reset" type="Button" parent="."]
-offset_left = 1576.0
-offset_top = 158.0
-offset_right = 1877.0
-offset_bottom = 276.0
+offset_left = 1717.0
+offset_top = 81.0
+offset_right = 1872.0
+offset_bottom = 121.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_ex5bn")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
