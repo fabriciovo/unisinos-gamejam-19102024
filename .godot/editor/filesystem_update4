@@ -18,3 +18,5 @@ res://Assets/Scenes/object.tscn
 res://Assets/Scripts/object.gd
 res://Assets/Scripts/World.gd
 res://Assets/Scripts/ui.gd
+res://Assets/Tilesets/World_Parent.tres
+res://Assets/Scripts/hero.gd

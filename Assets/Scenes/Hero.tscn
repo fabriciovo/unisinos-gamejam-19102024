@@ -41,3 +41,6 @@ texture = ExtResource("2_dnyud")
 [node name="Hand2" type="Sprite2D" parent="Hands"]
 position = Vector2(57, 17)
 texture = ExtResource("2_dnyud")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+rotation = -1.5708
