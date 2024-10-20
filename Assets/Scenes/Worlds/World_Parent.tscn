@@ -3,12 +3,15 @@
 [ext_resource type="Script" path="res://Assets/Scripts/World.gd" id="1_ovpnn"]
 [ext_resource type="Texture2D" uid="uid://5o5d1k8fjtyc" path="res://Assets/Sprites/bg-paper-low.jpg" id="2_ugiel"]
 [ext_resource type="TileSet" uid="uid://f12ejpc081aj" path="res://Assets/Tilesets/World_Parent.tres" id="2_uymsg"]
+[ext_resource type="PackedScene" uid="uid://bq0axx6wd1cpf" path="res://Assets/Scenes/goal.tscn" id="3_f2k20"]
 [ext_resource type="PackedScene" uid="uid://lxmgx4nk0pib" path="res://Assets/Scenes/clouds.tscn" id="3_ux1ur"]
-[ext_resource type="PackedScene" uid="uid://bq0axx6wd1cpf" path="res://Assets/Scenes/goal.tscn" id="4_jc7h7"]
 
 [node name="World_Parent" type="Node2D"]
 script = ExtResource("1_ovpnn")
 metadata/_edit_lock_ = true
+
+[node name="Goal" parent="." instance=ExtResource("3_f2k20")]
+position = Vector2(1830, 678)
 
 [node name="Background" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.823529)
@@ -31,9 +34,6 @@ position = Vector2(1342, 122)
 
 [node name="Clouds4" parent="Enviroment" instance=ExtResource("3_ux1ur")]
 position = Vector2(122, 122)
-
-[node name="Goal" parent="." instance=ExtResource("4_jc7h7")]
-position = Vector2(1830, 675)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAADAAcABAADAAYAAAAEAAcABAADAAYAAAAFAAcABAADAAYAAAADAAYABAACAAcAAAAEAAYABAACAAcAAAAFAAYABAACAAcAAAAGAAYABAACAAUAAAAHAAYABAACAAUAAAAIAAYABAACAAUAAAAJAAYABAACAAUAAAAKAAYABAACAAUAAAALAAYABAACAAUAAAAMAAYABAACAAUAAAANAAYABAACAAUAAAAOAAYABAACAAUAAAAPAAYABAACAAUAAAAGAAcABAAGAAgAAAAHAAcABAAGAAgAAAAIAAcABAAGAAgAAAAJAAcABAAGAAgAAAAKAAcABAAGAAgAAAALAAcABAAGAAgAAAAMAAcABAAGAAgAAAANAAcABAAGAAgAAAAOAAcABAAGAAgAAAAPAAcABAAGAAgAAAA=")

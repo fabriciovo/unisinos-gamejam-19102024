@@ -1,25 +1,24 @@
-[gd_scene load_steps=6 format=4 uid="uid://0onh7wcm7y7v"]
+[gd_scene load_steps=5 format=4 uid="uid://0onh7wcm7y7v"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_07ka1"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_kq163"]
-[ext_resource type="PackedScene" uid="uid://gmx10te7mdgy" path="res://Assets/Scenes/Worlds/world_3.tscn" id="3_0yst3"]
 [ext_resource type="PackedScene" uid="uid://yo1nwff0jomt" path="res://Assets/Scenes/Enemy.tscn" id="3_2qlbp"]
 [ext_resource type="PackedScene" uid="uid://d1okcied3aoy4" path="res://Assets/Scenes/floating_text.tscn" id="4_6byjo"]
 
 [node name="World_2" instance=ExtResource("1_07ka1")]
 
+[node name="Goal" parent="." index="0"]
+position = Vector2(1732, 919)
+next_scene = "res://Assets/Scenes/Worlds/world_3.tscn"
+
 [node name="Hero" parent="." index="2" instance=ExtResource("2_kq163")]
 position = Vector2(122, 488)
 
-[node name="Goal" parent="." index="3"]
-position = Vector2(1768, 917)
-next_scene = ExtResource("3_0yst3")
-
-[node name="TileMapLayer" parent="." index="4"]
-tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAAGAAYABAAKAAIAAAAPAAYABAACAAUAAAAGAAcABAAKAAMAAAAPAAcABAAGAAgAAAAPAAQABAAKAAIAAAAPAAUABAAKAAMAAAA=")
-
-[node name="Enemy" parent="." index="5" instance=ExtResource("3_2qlbp")]
+[node name="Enemy" parent="." index="4" instance=ExtResource("3_2qlbp")]
 position = Vector2(1030, 845)
 
-[node name="Floating_Text" parent="." index="6" instance=ExtResource("4_6byjo")]
+[node name="Floating_Text" parent="." index="5" instance=ExtResource("4_6byjo")]
 text = "Careful! Avoid the enemy"
+
+[node name="TileMapLayer" parent="." index="6"]
+tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAAGAAYABAAKAAIAAAAPAAYABAACAAUAAAAGAAcABAAKAAMAAAAPAAcABAAGAAgAAAAPAAQABAAKAAIAAAAPAAUABAAKAAMAAAA=")

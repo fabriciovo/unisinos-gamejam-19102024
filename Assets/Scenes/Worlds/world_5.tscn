@@ -1,25 +1,23 @@
-[gd_scene load_steps=6 format=4 uid="uid://ceaalugrd1g8s"]
+[gd_scene load_steps=5 format=4 uid="uid://c4mtvo8w304bj"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_qxgno"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_j51qq"]
-[ext_resource type="PackedScene" uid="uid://i4awdnckkhp8" path="res://Assets/Scenes/Worlds/world_1.tscn" id="3_f37mv"]
 [ext_resource type="PackedScene" uid="uid://yo1nwff0jomt" path="res://Assets/Scenes/Enemy.tscn" id="4_3yeq2"]
 [ext_resource type="PackedScene" uid="uid://yk32npmmjof" path="res://Assets/Scenes/heart.tscn" id="4_mtx1a"]
 
 [node name="World_3" instance=ExtResource("1_qxgno")]
 
+[node name="Goal" parent="." index="0"]
+next_scene = "res://Assets/Scenes/Worlds/world_1.tscn"
+
 [node name="Hero" parent="." index="2" instance=ExtResource("2_j51qq")]
 position = Vector2(122, 488)
 
-[node name="Goal" parent="." index="3"]
-position = Vector2(977, 430)
-next_scene = ExtResource("3_f37mv")
-
-[node name="TileMapLayer" parent="." index="4"]
-tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAAOAAYABAACAAUAAAAPAAYABAACAAUAAAANAAcABAAGAAgAAAAOAAcABAAGAAgAAAAPAAcABAAGAAgAAAAIAAQABAACAAUAAAAHAAQABAACAAUAAAA=")
-
-[node name="Heart" parent="." index="5" instance=ExtResource("4_mtx1a")]
+[node name="Heart" parent="." index="4" instance=ExtResource("4_mtx1a")]
 position = Vector2(1393, 542)
 
-[node name="Enemy" parent="." index="6" instance=ExtResource("4_3yeq2")]
+[node name="Enemy" parent="." index="5" instance=ExtResource("4_3yeq2")]
 position = Vector2(984, 866)
+
+[node name="TileMapLayer" parent="." index="6"]
+tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAAOAAYABAACAAUAAAAPAAYABAACAAUAAAANAAcABAAGAAgAAAAOAAcABAAGAAgAAAAPAAcABAAGAAgAAAAIAAQABAACAAUAAAAHAAQABAACAAUAAAA=")

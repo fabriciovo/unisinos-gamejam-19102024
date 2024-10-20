@@ -48,6 +48,6 @@ func _create_static_body(_position: Vector2) -> void:
 func Reset_Draw():
 	_array_pos.clear()
 	for _shape in _shapes:
-		_shape.queue_free()
+		_shape.call_deferred("queue_free")
 	_shapes.clear()
 	queue_redraw()
