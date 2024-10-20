@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=4 uid="uid://brrgwq5l2mrlm"]
+[gd_scene load_steps=6 format=4 uid="uid://b1en4vv55ktqy"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_ltwe7"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_hvkts"]
-[ext_resource type="PackedScene" uid="uid://urbrx4xlom1w" path="res://Assets/Scenes/Worlds/world_5.tscn" id="3_1na8r"]
+[ext_resource type="PackedScene" uid="uid://ceaalugrd1g8s" path="res://Assets/Scenes/Worlds/world_5.tscn" id="3_1na8r"]
 [ext_resource type="PackedScene" uid="uid://yk32npmmjof" path="res://Assets/Scenes/heart.tscn" id="4_023qf"]
 [ext_resource type="PackedScene" uid="uid://yo1nwff0jomt" path="res://Assets/Scenes/Enemy.tscn" id="5_snorr"]
 

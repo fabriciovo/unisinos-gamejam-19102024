@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=4 uid="uid://cwllc8ci0bhid"]
+[gd_scene load_steps=6 format=4 uid="uid://gmx10te7mdgy"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_vrk0t"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_q0m87"]
-[ext_resource type="PackedScene" uid="uid://brrgwq5l2mrlm" path="res://Assets/Scenes/Worlds/world_4.tscn" id="3_s0tr1"]
+[ext_resource type="PackedScene" uid="uid://b1en4vv55ktqy" path="res://Assets/Scenes/Worlds/world_4.tscn" id="3_c8guj"]
 [ext_resource type="PackedScene" uid="uid://d1okcied3aoy4" path="res://Assets/Scenes/floating_text.tscn" id="4_c6feg"]
 [ext_resource type="PackedScene" uid="uid://yk32npmmjof" path="res://Assets/Scenes/heart.tscn" id="5_yct8c"]
 
@@ -16,7 +16,7 @@ position = Vector2(122, 488)
 
 [node name="Goal" parent="." index="3"]
 position = Vector2(1768, 917)
-next_scene = ExtResource("3_s0tr1")
+next_scene = ExtResource("3_c8guj")
 
 [node name="TileMapLayer" parent="." index="4"]
 position = Vector2(0, 1)

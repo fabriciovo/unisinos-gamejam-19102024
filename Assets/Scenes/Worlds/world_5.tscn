@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=4 uid="uid://urbrx4xlom1w"]
+[gd_scene load_steps=6 format=4 uid="uid://ceaalugrd1g8s"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_qxgno"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_j51qq"]
