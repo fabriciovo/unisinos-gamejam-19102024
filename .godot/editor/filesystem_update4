@@ -14,3 +14,6 @@ res://Assets/Scripts/draw_node.gd
 res://Assets/Scripts/goal.gd
 res://Assets/Scenes/heart.tscn
 res://Assets/Scenes/Worlds/world_3.tscn
+res://Assets/Scenes/Worlds/world_5.tscn
+res://Assets/Scenes/Worlds/world_4.tscn
+res://Assets/Scripts/heart.gd

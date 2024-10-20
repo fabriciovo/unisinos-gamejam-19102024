@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=4 uid="uid://cctjfxah28owd"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/World.gd" id="1_ovpnn"]
+[ext_resource type="Texture2D" uid="uid://5o5d1k8fjtyc" path="res://Assets/Sprites/bg-paper-low.jpg" id="2_ugiel"]
 [ext_resource type="TileSet" uid="uid://f12ejpc081aj" path="res://Assets/Tilesets/World_Parent.tres" id="2_uymsg"]
-[ext_resource type="Texture2D" uid="uid://rhw4a4fomene" path="res://Assets/Sprites/Ui/Paper Background.png" id="2_wu4fu"]
 [ext_resource type="PackedScene" uid="uid://lxmgx4nk0pib" path="res://Assets/Scenes/clouds.tscn" id="3_ux1ur"]
 [ext_resource type="PackedScene" uid="uid://bq0axx6wd1cpf" path="res://Assets/Scenes/goal.tscn" id="4_jc7h7"]
 
@@ -13,9 +13,9 @@ metadata/_edit_lock_ = true
 [node name="Background" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.823529)
 z_index = -1
-position = Vector2(971.176, 562)
-scale = Vector2(1.00331, 1.04074)
-texture = ExtResource("2_wu4fu")
+position = Vector2(958, 566)
+scale = Vector2(1.00208, 1.03333)
+texture = ExtResource("2_ugiel")
 
 [node name="Enviroment" type="Node2D" parent="."]
 z_index = -1

@@ -2,7 +2,7 @@ extends CharacterBody2D
 @onready var raycast = $RayCast2D
 @onready var sprite = $Sprite2D
 
-const SPEED = 100.0
+const SPEED = 150.0
 const JUMP_VELOCITY = -400.0
 var direction: = 1
 

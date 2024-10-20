@@ -1,26 +1,28 @@
-[gd_scene load_steps=5 format=4 uid="uid://brrgwq5l2mrlm"]
+[gd_scene load_steps=6 format=4 uid="uid://brrgwq5l2mrlm"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_ltwe7"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_hvkts"]
-[ext_resource type="PackedScene" uid="uid://d1okcied3aoy4" path="res://Assets/Scenes/floating_text.tscn" id="3_5sssf"]
+[ext_resource type="PackedScene" uid="uid://urbrx4xlom1w" path="res://Assets/Scenes/Worlds/world_5.tscn" id="3_1na8r"]
 [ext_resource type="PackedScene" uid="uid://yk32npmmjof" path="res://Assets/Scenes/heart.tscn" id="4_023qf"]
+[ext_resource type="PackedScene" uid="uid://yo1nwff0jomt" path="res://Assets/Scenes/Enemy.tscn" id="5_snorr"]
 
 [node name="World_3" instance=ExtResource("1_ltwe7")]
-
-[node name="Background" parent="." index="0"]
-position = Vector2(1013, 561)
 
 [node name="Hero" parent="." index="2" instance=ExtResource("2_hvkts")]
 position = Vector2(122, 488)
 
 [node name="Goal" parent="." index="3"]
-position = Vector2(1768, 917)
+position = Vector2(1828, 678)
+next_scene = ExtResource("3_1na8r")
 
 [node name="TileMapLayer" parent="." index="4"]
-tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAAGAAYABAAKAAIAAAAPAAYABAACAAUAAAAGAAcABAAKAAMAAAAPAAcABAAGAAgAAAAPAAQABAAKAAIAAAAPAAUABAAKAAMAAAAGAAQABAACAAUAAAAKAAUABAACAAUAAAA=")
+tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAcABAAGAAgAAAANAAYABAACAAUAAAAOAAYABAACAAUAAAAPAAYABAACAAUAAAAMAAcABAACAAUAAAANAAcABAAGAAgAAAAOAAcABAAGAAgAAAAPAAcABAAGAAgAAAAFAAQABAACAAUAAAAKAAQABAACAAUAAAAGAAQABAACAAUAAAAHAAQABAACAAUAAAAIAAQABAACAAUAAAAJAAQABAACAAUAAAAFAAMABAACAAUAAAAKAAMABAACAAUAAAA=")
 
-[node name="Floating_Text" parent="." index="5" instance=ExtResource("3_5sssf")]
-text = "You gotta manage that ink!"
+[node name="Heart" parent="." index="5" instance=ExtResource("4_023qf")]
+position = Vector2(1022, 878)
 
-[node name="Heart" parent="." index="6" instance=ExtResource("4_023qf")]
-position = Vector2(1083, 404)
+[node name="Enemy" parent="." index="6" instance=ExtResource("5_snorr")]
+position = Vector2(975, 405)
+
+[node name="Enemy2" parent="." index="7" instance=ExtResource("5_snorr")]
+position = Vector2(809, 871)

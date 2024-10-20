@@ -13,6 +13,11 @@ const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 var direction: = 1
 
+func _ready() -> void:
+	randomize()
+	direction = randi_range(1,-1)
+	raycast.rotation = raycast.rotation * direction
+
 func _process(delta: float) -> void:
 	if direction == 1:
 		sprite.flip_h = false

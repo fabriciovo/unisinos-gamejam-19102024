@@ -18,6 +18,10 @@ func _input(_event: InputEvent) -> void:
 	_create_static_body(_event.position)
 	
 
+func Set_Ink_Value(_value):
+	ink_count += _value
+	$Ink.set_ink_value(ink_count)
+
 func ResetInk():
 	ink_count = 100
 	$Ink.set_ink_value(ink_count)
