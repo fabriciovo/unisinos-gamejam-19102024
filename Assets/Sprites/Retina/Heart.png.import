@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b63ig3wt7eknc"
-path="res://.godot/imported/Resetlevel Button Click.png-5c33b1ab449036e3137a2f2d0bc17a12.ctex"
+uid="uid://bma7r76pm43ib"
+path="res://.godot/imported/Heart.png-7aaccda4ec61cfee78047963c722b2f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Resetlevel Button Click.png"
-dest_files=["res://.godot/imported/Resetlevel Button Click.png-5c33b1ab449036e3137a2f2d0bc17a12.ctex"]
+source_file="res://Assets/Sprites/Retina/Heart.png"
+dest_files=["res://.godot/imported/Heart.png-7aaccda4ec61cfee78047963c722b2f9.ctex"]
 
 [params]
 

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=4 uid="uid://cwllc8ci0bhid"]
+
+[ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_vrk0t"]
+[ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_q0m87"]
+[ext_resource type="PackedScene" uid="uid://d1okcied3aoy4" path="res://Assets/Scenes/floating_text.tscn" id="4_c6feg"]
+[ext_resource type="PackedScene" uid="uid://yk32npmmjof" path="res://Assets/Scenes/heart.tscn" id="5_yct8c"]
+
+[node name="World_3" instance=ExtResource("1_vrk0t")]
+
+[node name="Background" parent="." index="0"]
+position = Vector2(1013, 561)
+
+[node name="Hero" parent="." index="2" instance=ExtResource("2_q0m87")]
+position = Vector2(122, 488)
+
+[node name="Goal" parent="." index="3"]
+position = Vector2(1768, 917)
+
+[node name="TileMapLayer" parent="." index="4"]
+tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAAGAAYABAAKAAIAAAAPAAYABAACAAUAAAAGAAcABAAKAAMAAAAPAAcABAAGAAgAAAAPAAQABAAKAAIAAAAPAAUABAAKAAMAAAAGAAQABAACAAUAAAAKAAUABAACAAUAAAA=")
+
+[node name="Floating_Text" parent="." index="5" instance=ExtResource("4_c6feg")]
+text = "You gotta manage that ink!"
+
+[node name="Heart" parent="." index="6" instance=ExtResource("5_yct8c")]
+position = Vector2(1083, 404)

@@ -1,80 +1,15 @@
-[gd_scene load_steps=11 format=4 uid="uid://i4awdnckkhp8"]
+[gd_scene load_steps=6 format=4 uid="uid://i4awdnckkhp8"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_wujns"]
 [ext_resource type="PackedScene" uid="uid://db3r88tfxgtmf" path="res://Assets/Scenes/Worlds/world_2.tscn" id="2_5cke0"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_mdmq2"]
 [ext_resource type="PackedScene" uid="uid://d2j0u46esgmsw" path="res://Assets/Scenes/danger_zone.tscn" id="3_5wmi4"]
-[ext_resource type="PackedScene" uid="uid://lxmgx4nk0pib" path="res://Assets/Scenes/clouds.tscn" id="5_x34iq"]
-[ext_resource type="FontFile" uid="uid://g27ed7qaagpy" path="res://Assets/Fonts/ScribblesVariantNo_ligatures-Regular.ttf" id="6_hbgfp"]
-[ext_resource type="Script" path="res://Assets/Scripts/text_effects.gd" id="7_fttdv"]
-
-[sub_resource type="Animation" id="Animation_lkp5c"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_pjts0"]
-resource_name = "hide"
-length = 1.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.13333),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-tracks/1/type = "method"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(1.4),
-"transitions": PackedFloat32Array(1),
-"values": [{
-"args": [],
-"method": &"queue_free"
-}]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_cf26j"]
-_data = {
-"RESET": SubResource("Animation_lkp5c"),
-"hide": SubResource("Animation_pjts0")
-}
+[ext_resource type="PackedScene" uid="uid://d1okcied3aoy4" path="res://Assets/Scenes/floating_text.tscn" id="5_7p1ri"]
 
 [node name="World_1" instance=ExtResource("1_wujns")]
 
 [node name="Enviroment" parent="." index="1"]
 process_mode = 3
-
-[node name="Clouds" parent="Enviroment" index="0" instance=ExtResource("5_x34iq")]
-position = Vector2(610, 244)
-
-[node name="Clouds2" parent="Enviroment" index="1" instance=ExtResource("5_x34iq")]
-position = Vector2(1708, 366)
-
-[node name="Clouds3" parent="Enviroment" index="2" instance=ExtResource("5_x34iq")]
-position = Vector2(1342, 122)
-
-[node name="Clouds4" parent="Enviroment" index="3" instance=ExtResource("5_x34iq")]
-position = Vector2(122, 122)
 
 [node name="Hero" parent="." index="2" instance=ExtResource("2_mdmq2")]
 position = Vector2(122, 488)
@@ -91,36 +26,7 @@ position = Vector2(732, 732)
 [node name="Goal" parent="." index="6"]
 next_scene = ExtResource("2_5cke0")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." index="7"]
-script = ExtResource("7_fttdv")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" index="0"]
-libraries = {
-"": SubResource("AnimationLibrary_cf26j")
-}
-
-[node name="Control" type="Control" parent="CanvasLayer" index="1"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 244.0
-offset_right = -822.0
-offset_bottom = -348.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_vertical = 4
-
-[node name="TextEdit" type="Label" parent="CanvasLayer/Control" index="0"]
-layout_mode = 0
-offset_left = 244.0
-offset_top = 122.0
-offset_right = 976.0
-offset_bottom = 244.0
-theme_override_colors/font_color = Color(0.988235, 0.360784, 0.396078, 1)
-theme_override_fonts/font = ExtResource("6_hbgfp")
-theme_override_font_sizes/font_size = 57
-text = "This pencil might do something..."
+[node name="Floating_Text" parent="." index="7" instance=ExtResource("5_7p1ri")]
 
 [node name="TileMapLayer" parent="." index="8"]
 tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAgAAAADAAgABAAGAAgAAAAEAAgABAAGAAgAAAAFAAgABAAGAAgAAAAGAAgABAAGAAgAAAAHAAgABAAGAAgAAAAIAAgABAAGAAgAAAAJAAgABAAGAAgAAAAKAAgABAAGAAgAAAALAAgABAAGAAgAAAAMAAgABAAGAAgAAAANAAgABAAGAAgAAAAOAAgABAAGAAgAAAAPAAgABAAGAAgAAAAAAAcABAAGAAgAAAAAAAYABAAGAAgAAAABAAcABAAGAAgAAAABAAYABAAGAAgAAAAAAAUABAACAAUAAAABAAUABAACAAUAAAACAAUABAACAAkAAAACAAYABAAGAAgAAAACAAcABAAGAAgAAAADAAcABAADAAYAAAAEAAcABAADAAYAAAAFAAcABAADAAYAAAADAAYABAACAAcAAAAEAAYABAACAAcAAAAFAAYABAACAAcAAAAGAAYABAACAAUAAAAHAAYABAACAAUAAAAIAAYABAACAAUAAAAJAAYABAACAAUAAAAKAAYABAACAAUAAAALAAYABAACAAUAAAAMAAYABAACAAUAAAANAAYABAACAAUAAAAOAAYABAACAAUAAAAPAAYABAACAAUAAAAGAAcABAAGAAgAAAAHAAcABAAGAAgAAAAIAAcABAAGAAgAAAAJAAcABAAGAAgAAAAKAAcABAAGAAgAAAALAAcABAAGAAgAAAAMAAcABAAGAAgAAAANAAcABAAGAAgAAAAOAAcABAAGAAgAAAAPAAcABAAGAAgAAAALAAQABAAKAAIAAAALAAUABAAKAAMAAAA=")

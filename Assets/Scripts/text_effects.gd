@@ -1,6 +1,12 @@
 extends CanvasLayer
 
+@onready var text_label = $Control/Text
+@export var text:String = ""
+
 var stop = false
+
+func _ready() -> void:
+	text_label.text = text
 
 func _process(delta: float) -> void:
 	if stop: return

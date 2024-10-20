@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://581bqfoy8tor"
-path="res://.godot/imported/playbutton-click.png-b9ca2fc6e0292ec1c8bd33b20d521eee.ctex"
+uid="uid://b63ig3wt7eknc"
+path="res://.godot/imported/Resetlevel Button Click.png-984a42949d039c1b8bb17ac47a052c59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://playbutton-click.png"
-dest_files=["res://.godot/imported/playbutton-click.png-b9ca2fc6e0292ec1c8bd33b20d521eee.ctex"]
+source_file="res://Assets/Sprites/Resetlevel Button Click.png"
+dest_files=["res://.godot/imported/Resetlevel Button Click.png-984a42949d039c1b8bb17ac47a052c59.ctex"]
 
 [params]
 

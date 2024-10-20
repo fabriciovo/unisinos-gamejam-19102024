@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=4 uid="uid://cctjfxah28owd"]
+[gd_scene load_steps=6 format=4 uid="uid://cctjfxah28owd"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/World.gd" id="1_ovpnn"]
 [ext_resource type="TileSet" uid="uid://f12ejpc081aj" path="res://Assets/Tilesets/World_Parent.tres" id="2_uymsg"]
 [ext_resource type="Texture2D" uid="uid://rhw4a4fomene" path="res://Assets/Sprites/Ui/Paper Background.png" id="2_wu4fu"]
+[ext_resource type="PackedScene" uid="uid://lxmgx4nk0pib" path="res://Assets/Scenes/clouds.tscn" id="3_ux1ur"]
 [ext_resource type="PackedScene" uid="uid://bq0axx6wd1cpf" path="res://Assets/Scenes/goal.tscn" id="4_jc7h7"]
 
 [node name="World_Parent" type="Node2D"]
@@ -18,6 +19,18 @@ texture = ExtResource("2_wu4fu")
 
 [node name="Enviroment" type="Node2D" parent="."]
 z_index = -1
+
+[node name="Clouds" parent="Enviroment" instance=ExtResource("3_ux1ur")]
+position = Vector2(610, 244)
+
+[node name="Clouds2" parent="Enviroment" instance=ExtResource("3_ux1ur")]
+position = Vector2(1708, 366)
+
+[node name="Clouds3" parent="Enviroment" instance=ExtResource("3_ux1ur")]
+position = Vector2(1342, 122)
+
+[node name="Clouds4" parent="Enviroment" instance=ExtResource("3_ux1ur")]
+position = Vector2(122, 122)
 
 [node name="Goal" parent="." instance=ExtResource("4_jc7h7")]
 position = Vector2(1830, 675)

@@ -1,23 +1,11 @@
 [gd_scene load_steps=5 format=4 uid="uid://db3r88tfxgtmf"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_07ka1"]
-[ext_resource type="PackedScene" uid="uid://lxmgx4nk0pib" path="res://Assets/Scenes/clouds.tscn" id="2_6udre"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_kq163"]
 [ext_resource type="PackedScene" uid="uid://yo1nwff0jomt" path="res://Assets/Scenes/Enemy.tscn" id="3_2qlbp"]
+[ext_resource type="PackedScene" uid="uid://d1okcied3aoy4" path="res://Assets/Scenes/floating_text.tscn" id="4_6byjo"]
 
 [node name="World_2" instance=ExtResource("1_07ka1")]
-
-[node name="Clouds" parent="Enviroment" index="0" instance=ExtResource("2_6udre")]
-position = Vector2(610, 244)
-
-[node name="Clouds2" parent="Enviroment" index="1" instance=ExtResource("2_6udre")]
-position = Vector2(1708, 366)
-
-[node name="Clouds3" parent="Enviroment" index="2" instance=ExtResource("2_6udre")]
-position = Vector2(1342, 122)
-
-[node name="Clouds4" parent="Enviroment" index="3" instance=ExtResource("2_6udre")]
-position = Vector2(122, 122)
 
 [node name="Hero" parent="." index="2" instance=ExtResource("2_kq163")]
 position = Vector2(122, 488)
@@ -30,3 +18,6 @@ tile_map_data = PackedByteArray("AAAAAAgABAAGAAgAAAABAAgABAAGAAgAAAACAAgABAAGAAg
 
 [node name="Enemy" parent="." index="5" instance=ExtResource("3_2qlbp")]
 position = Vector2(1030, 845)
+
+[node name="Floating_Text" parent="." index="6" instance=ExtResource("4_6byjo")]
+text = "Careful! Avoid the enemy"
