@@ -8,6 +8,7 @@
 [node name="World_3" instance=ExtResource("1_qxgno")]
 
 [node name="Goal" parent="." index="0"]
+position = Vector2(977, 433)
 next_scene = "res://Assets/Scenes/Worlds/world_1.tscn"
 
 [node name="Hero" parent="." index="2" instance=ExtResource("2_j51qq")]
