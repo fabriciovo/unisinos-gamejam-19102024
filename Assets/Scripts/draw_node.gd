@@ -31,9 +31,9 @@ func _draw() -> void:
 		draw_circle(_point,20,color_rgb)
 	
 
-func _create_static_body(position: Vector2) -> void:
+func _create_static_body(_position: Vector2) -> void:
 	var body = StaticBody2D.new()
-	body.position = position
+	body.position = _position
 	
 	var collision_shape = CollisionShape2D.new()
 	var circle_shape = CircleShape2D.new()

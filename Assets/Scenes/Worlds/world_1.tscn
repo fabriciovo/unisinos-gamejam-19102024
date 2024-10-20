@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=4 uid="uid://i4awdnckkhp8"]
 
 [ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_wujns"]
-[ext_resource type="PackedScene" uid="uid://db3r88tfxgtmf" path="res://Assets/Scenes/Worlds/world_2.tscn" id="2_5cke0"]
 [ext_resource type="PackedScene" uid="uid://1q4qflvmiepm" path="res://Assets/Scenes/Hero.tscn" id="2_mdmq2"]
 [ext_resource type="PackedScene" uid="uid://d2j0u46esgmsw" path="res://Assets/Scenes/danger_zone.tscn" id="3_5wmi4"]
+[ext_resource type="PackedScene" uid="uid://cwllc8ci0bhid" path="res://Assets/Scenes/Worlds/world_3.tscn" id="4_kfatp"]
 [ext_resource type="PackedScene" uid="uid://d1okcied3aoy4" path="res://Assets/Scenes/floating_text.tscn" id="5_7p1ri"]
 
 [node name="World_1" instance=ExtResource("1_wujns")]
@@ -24,7 +24,7 @@ position = Vector2(610, 732)
 position = Vector2(732, 732)
 
 [node name="Goal" parent="." index="6"]
-next_scene = ExtResource("2_5cke0")
+next_scene = ExtResource("4_kfatp")
 
 [node name="Floating_Text" parent="." index="7" instance=ExtResource("5_7p1ri")]
 

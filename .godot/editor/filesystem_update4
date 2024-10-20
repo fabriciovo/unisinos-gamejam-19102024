@@ -17,3 +17,5 @@ res://Assets/Scenes/Worlds/world_3.tscn
 res://Assets/Scenes/Worlds/world_5.tscn
 res://Assets/Scenes/Worlds/world_4.tscn
 res://Assets/Scripts/heart.gd
+res://Assets/Scripts/ui.gd
+res://Assets/Scripts/hero.gd

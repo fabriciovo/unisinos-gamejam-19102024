@@ -9,7 +9,7 @@ var direction: = 1
 func _ready() -> void:
 	add_to_group("HERO")
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if direction == 1:
 		sprite.flip_h = false
 	else:

@@ -8,7 +8,7 @@ var stop = false
 func _ready() -> void:
 	text_label.text = text
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if stop: return
 	if Ui.IsPlay:
 		_on_start_game()
