@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://da6fn1mgrha11"]
+
+[ext_resource type="PackedScene" uid="uid://cctjfxah28owd" path="res://Assets/Scenes/Worlds/World_Parent.tscn" id="1_qmusy"]
+
+[node name="World_Sandbox" instance=ExtResource("1_qmusy")]
