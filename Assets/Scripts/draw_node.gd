@@ -11,7 +11,7 @@ func _input(_event: InputEvent) -> void:
 	if not Can_draw or ink_count <= 0: return
 	if not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		return
-	ink_count -= 1.0
+	ink_count -= 0.5
 	$Ink.set_ink_value(ink_count)
 	_array_pos.append(_event.position)
 	queue_redraw()
